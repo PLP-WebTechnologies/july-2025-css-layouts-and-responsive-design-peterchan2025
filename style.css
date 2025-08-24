@@ -1,0 +1,112 @@
+/* ===============================
+   Global Styles
+   =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 1.6;
+  background: #fefefe;
+  color: #333;
+}
+
+/* ===============================
+   Navigation Bar (Flexbox)
+   =============================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff6f61;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ===============================
+   Hero Section
+   =============================== */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #ffe0b2;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+  color: #e65100;
+}
+
+/* ===============================
+   Grid Content Section (CSS Grid)
+   =============================== */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  background: #fff3e0;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.grid-item img {
+  width: 100%;      /* Responsive image */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* ===============================
+   Footer
+   =============================== */
+.footer {
+  text-align: center;
+  background: #ff6f61;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===============================
+   Media Queries for Responsiveness
+   =============================== */
+
+/* Tablet (min-width: 600px) */
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (min-width: 900px) */
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
